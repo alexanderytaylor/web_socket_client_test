@@ -6,15 +6,13 @@ import 'package:web_socket_channel/web_socket_channel.dart';
 import 'package:web_socket_channel/status.dart';
 
 Future<void> main() async {
-  final client = CoinbaseApiClient();
-
-  client.initSocket();
+  final client = CoinbaseApiClient()..initSocket();
 
   try {
     Status productList = await client.getProducts();
 
     print('Available Products:');
-    for (int i = 0; i < productList.products.length; i++) {
+    for (var i = 0; i < productList.products.length; i++) {
       print(productList.products[i].displayName);
     }
   } catch (_) {
