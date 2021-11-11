@@ -86,7 +86,7 @@ class CoinbaseApiClient {
     return productList;
   }
 
-  /// Listen to a stream of real-time data for a particular product
+  /// Listen to a stream of real-time data for a particular product.
   Stream<Ticker> listenToProduct(String productId) {
     _sendMessage(
       type: Action.subscribe,
@@ -101,7 +101,7 @@ class CoinbaseApiClient {
         .cast<Ticker>();
   }
 
-  /// Listen to a stream of real-time data for a particular product
+  /// Cancel the stream of real-time data for a particular product.
   void stopListenToProduct(String productId) {
     _sendMessage(
       type: Action.unsubscribe,

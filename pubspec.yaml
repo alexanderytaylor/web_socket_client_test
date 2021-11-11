@@ -1,5 +1,5 @@
 name: coinbase_api
-description: A Dart API Client for Coinbase Cloud
+description: A Dart API Client to test out websockets using Coinbase Cloud
 version: 1.0.0+1
 publish_to: none
 

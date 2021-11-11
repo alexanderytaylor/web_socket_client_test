@@ -1,9 +1,9 @@
-# coinbase_api
+# web_socket_test_client
 
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 [![License: MIT][license_badge]][license_link]
 
-A Dart API Client for Coinbase Cloud
+A Dart API Client to test websockets for Coinbase Cloud
 
 [license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [license_link]: https://opensource.org/licenses/MIT
